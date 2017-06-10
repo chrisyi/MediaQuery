@@ -1,7 +1,7 @@
-<section class='movie-data-container'>
-    <section class='movie-data-card' ng-repeat="movie in movieData">
+<section class='movie-search-container' >
+    <section class='movie-search-card' ng-repeat="movie in movieSearchData" ng-click="viewmovie(movie.Id)">
         <h1>{{ movie.Title }} ({{movie.ReleaseDate.slice(0, 4)}})</h1>
-        <img ng-src='{{movie.PosterPath}}' alt="">
+        <img ng-src='{{movie.PosterPath}}'>
 
 
 

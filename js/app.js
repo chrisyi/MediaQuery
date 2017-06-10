@@ -12,7 +12,11 @@ angular.module('app', ['ui.router'])
                 templateUrl: '../views/search-result.html',
                 controller: 'searchResultCtrl'
             })
-            
+            .state('moviechoice', {
+                url: '/moviechoice/:movie',
+                templateUrl: '../views/movie-choice.html',
+                controller: 'movieChoiceCtrl'
+            })
 
         $urlRouterProvider
             .otherwise('/')
