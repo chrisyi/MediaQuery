@@ -1,7 +1,20 @@
-<h1>Movie Lookup</h1>
-    {{test}}<br>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/home.css">
+</head>
 
-<form ng-submit="getMovieTitleData(searchQuery)">
-    <input type="text" class="form-control" ng-model='searchQuery' placeholder='Movie title'>
-    <button class='btn-primary' ng-click="getMovieTitleData(searchQuery)">Submit</button>
-</form>
+
+
+<body>
+    <div id="bgImages">
+        <div class="container">
+            <div class='row vertical-center inputbuttonup'>
+                <form style="display:inherit" ng-submit="getMovieTitleData(searchQuery)" class='col-sm-4 col-xs-8 center-block float-none'>
+                    <input type="text" class="form-control transparent-input" ng-model='searchQuery'>
+
+                    <button class='btn btn-default' ng-click="getMovieTitleData(searchQuery)"><span class="glyphicon glyphicon-search"></span></button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,23 @@
+.float-none {
+    float: none;
+}
+
+.vertical-center {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.transparent-input {
+    background-color: rgba(200, 200, 200, .2);
+    color: white;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+}
+
+.container {
+    position: absolute
+}
+.inputbuttonup {
+    margin-left:auto;
+    margin-right:auto
+}
