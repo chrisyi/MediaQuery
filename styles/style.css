@@ -1,0 +1,30 @@
+/* Background pattern from Subtle Patterns */
+body {
+    background: url('/img/pw_maze_black_@2X.png')
+}
+
+.navbar {
+    font-size: 20pt;
+    font-weight: 800;
+    font-family: Helvetica;
+    margin-left: 5%;
+    margin-top: 1%;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.1rem;
+    background-color: transparent;
+    text-align: center;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 800;
+    font-family: Helvetica;
+    color: white;
+    text-decoration: underline;
+}

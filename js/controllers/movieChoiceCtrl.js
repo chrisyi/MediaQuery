@@ -1,5 +1,4 @@
 angular.module("app").controller('movieChoiceCtrl', function($scope, $stateParams, mainSrv){
-    console.log($stateParams)
     mainSrv.getMovieIdData($stateParams.movie).then(function(response) {      
         console.log(response)
         $scope.movieData = response;  
@@ -7,5 +6,4 @@ angular.module("app").controller('movieChoiceCtrl', function($scope, $stateParam
     })
     
 
-    $scope.test = 'test'
 })

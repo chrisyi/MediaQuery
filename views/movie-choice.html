@@ -1,12 +1,16 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/movie-choice.css">
+</head>
+
+<body>
+
+
 <section class='movie-data-container'>
-    <section class='movie-data-card'>
-        <!--ng-repeat="(key, value) in movieData"       <h1>{{ key }} ({{value}})</h1>-->
-        <img ng-src='{{movie.PosterPath}}'> {{test}}
-
-
-
-
-
-
+    <section class='movie-data-card' ng-repeat="movie in movieData">
+        <div>{{movie.title}}</div>
+           <!--<img ng-src="https://image.tmdb.org/t/p/original" + {{movie.backdrop_path}} >-->
+        
     </section>
 </section>
+<h1 class="text-center">Under Construction</h1>
+</body>
