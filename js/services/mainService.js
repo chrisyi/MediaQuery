@@ -69,8 +69,5 @@ angular.module('app')
                     })
             })
             return promise
-
         }
-
-
     })

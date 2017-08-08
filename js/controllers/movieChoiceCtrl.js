@@ -1,9 +1,6 @@
-angular.module("app").controller('movieChoiceCtrl', function($scope, $stateParams, mainSrv){
-    mainSrv.getMovieIdData($stateParams.movie).then(function(response) {      
-        console.log(response)
-        $scope.movieData = response;  
-                 
-    })
-    
-
+angular.module("app").controller('movieChoiceCtrl', function ($scope, $stateParams, movie) {
+    $scope.movie = movie;
+    var movieData = [];
+    $scope.movieData = movieData.push(movie.0)
+    console.log(movieData);
 })

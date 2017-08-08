@@ -15,7 +15,16 @@ angular.module('app', ['ui.router'])
             .state('moviechoice', {
                 url: '/moviechoice/:movie',
                 templateUrl: '../views/movie-choice.html',
-                controller: 'movieChoiceCtrl'
+                controller: 'movieChoiceCtrl',
+                resolve: {
+                    movie: function(mainSrv, $stateParams, $state) {
+                         return mainSrv.getMovieIdData($stateParams.movie).then(function(response) {   
+                            return response;  
+                        }).catch(function(){
+                            $state.go("home")
+                        })
+                    }
+                }
             })
             .state('about', {
                 url: '/about/',

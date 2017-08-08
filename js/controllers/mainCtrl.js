@@ -20,7 +20,6 @@ angular.module('app')
              bgImages.style.repeat = "no-repeat"
              bgImages.style.backgroundPosition = "top center"
         })
-
     })
 
 
