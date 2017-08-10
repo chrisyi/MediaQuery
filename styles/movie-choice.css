@@ -1,3 +1,15 @@
 body {
-    color: whitesmoke
+  color: whitesmoke;
+}
+.movie-information {
+  text-align: left;
+  color: #f0fff0;
+}
+.movie-info-title {
+  color: #f0fff0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 5em;
+}
+.movie-data-container {
+  margin-top: 5em;
 }

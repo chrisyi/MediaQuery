@@ -1,14 +1,33 @@
 <section class='movie-data-container'>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div id="thumbnail movie-choice">
+                    <div class="text-center">
+                        <img ng-src="{{moviePoster}}" alt="movie-poster">
+                        <span class="caption">
+                            <h1 class="movie-info-title">
+                            {{movie.title}}
+                            </h1>
+                        </span>
+                    </div>
+                    <div class="movie-information">
+                        <b>Tagline:</b> {{movie.tagline}}<br><br>
+                        <b>Overview:</b> {{movie.overview}}<br><br>
+                        <b>Genre:</b>
+                        <span ng-repeat="genre in movie.genres">
+                            {{genre.name}}
+                        </span><br><br>
+                        <b>Released:</b> {{movie.release_date}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <section class='movie-data-card' style="color: white">
-        <table>
-            <tr >
 
-            </tr>
-        </table>
-        <div >{{movieData}}</div>
-           <!--<img ng-src="https://image.tmdb.org/t/p/original" + {{movie.backdrop_path}} >-->
-        
+        <!--<img ng-src="https://image.tmdb.org/t/p/original" + {{movie.backdrop_path}} >-->
+
     </section>
 </section>
-
-
