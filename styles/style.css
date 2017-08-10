@@ -1,6 +1,6 @@
 /* Background pattern from Subtle Patterns */
 body {
-    background: url('../img/pw_maze_black_@2X.png?raw=true')
+    background: url('https://github.com/chrisyi/MediaQuery/blob/master/img/pw_maze_black_%402X.png')
 }
 
 .navbar {
