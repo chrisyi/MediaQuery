@@ -9,12 +9,12 @@ angular.module('app', ['ui.router'])
             })
             .state('searchresult', {
                 url: '/searchresult/:movie',
-                templateUrl: '../views/search-result.html',
+                templateUrl: './views/search-result.html',
                 controller: 'searchResultCtrl'
             })
             .state('moviechoice', {
                 url: '/moviechoice/:movie',
-                templateUrl: '../views/movie-choice.html',
+                templateUrl: './views/movie-choice.html',
                 controller: 'movieChoiceCtrl',
                 resolve: {
                     movie: function(mainSrv, $stateParams, $state) {
@@ -28,7 +28,7 @@ angular.module('app', ['ui.router'])
             })
             .state('about', {
                 url: '/about/',
-                templateUrl: '../views/about.html',
+                templateUrl: './views/about.html',
                 controller: 'aboutCtrl'
             })
 
